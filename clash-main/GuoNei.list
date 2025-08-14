@@ -1,2 +1,4 @@
 #美团
 PROCESS-NAME,com.sankuai.meituan.dispatch.homebrew
+#微信
+PROCESS-NAME,com.tencent.mm
