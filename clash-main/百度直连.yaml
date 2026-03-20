@@ -3,7 +3,7 @@ addons: &addons
   port: 443
   headers:
     # 钉钉直连写法
-     With-At: gw.alicdn.com
+    # With-At: gw.alicdn.com
      X-T5-Auth: 1659694008
      Host: 140.205.143:443
 # 节点
