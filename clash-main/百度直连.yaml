@@ -1,0 +1,43 @@
+addons: &addons
+  type: http
+  port: 443
+  headers:
+    # 钉钉直连写法
+     With-At: gw.alicdn.com
+     X-T5-Auth: 1659694008
+     Host: 140.205.143:443
+# 节点
+proxies:
+  - name: 🇨🇳 动态域名①
+    server: gw.alicdn.com
+    <<: *addons
+  - name: 🇨🇳 动态域名②
+    server: "dx.baidu.anxray.top"
+    <<: *addons
+  - name: 🇨🇳 动态域名③
+    server: "cloudnproxy.n.shifen.com"
+    <<: *addons
+  - name: 🇨🇳 北京电信
+    server: "220.181.7.1"
+    <<: *addons
+  - name: 🇨🇳 广州电信
+    server: "14.215.182.75"
+    <<: *addons
+  - name: 🇨🇳 广州移动
+    server: "183.240.98.84"
+    <<: *addons
+  - name: 🇨🇳 南京联通
+    server: "153.3.237.117"
+    <<: *addons
+  - name: 🇨🇳 南京电信①
+    server: "180.101.50.249"
+    <<: *addons
+  - name: 🇨🇳 南京电信②
+    server: "180.101.50.208"
+    <<: *addons
+  - name: 🇨🇳郑州电信 ②
+    server: "180.101.50.208"
+    <<: *addons
+  - name: 🇨🇳郑州中联 ①
+    server: "220.181.7.1"
+    <<: *addons
