@@ -1,43 +1,46 @@
-addons: &addons
+# 百度代理独立配置文件 - 无健康检测版本
+# 保存为 baidu-proxy.yaml 后，可直接导入或在主配置中引用
+
+# 百度代理通用锚点
+Baidu: &Baidu
   type: http
   port: 443
+  skip-cert-verify: true
   headers:
-    # 钉钉直连写法
-    # With-At: gw.alicdn.com
-     X-T5-Auth: 1659694008
-     Host: 140.205.143:443
-# 节点
+    Host: "153.3.236.22:443"
+    X-T5-Auth: "683556433"
+
+# 代理节点列表
 proxies:
-  - name: 🇨🇳 动态域名①
-    server: gw.alicdn.com
-    <<: *addons
-  - name: 🇨🇳 动态域名②
-    server: "dx.baidu.anxray.top"
-    <<: *addons
-  - name: 🇨🇳 动态域名③
+  # 百度代理节点集合
+  - name: 🇨🇳 公共域名1
     server: "cloudnproxy.n.shifen.com"
-    <<: *addons
-  - name: 🇨🇳 北京电信
-    server: "220.181.7.1"
-    <<: *addons
-  - name: 🇨🇳 广州电信
-    server: "14.215.182.75"
-    <<: *addons
-  - name: 🇨🇳 广州移动
-    server: "183.240.98.84"
-    <<: *addons
-  - name: 🇨🇳 南京联通
+    <<: *Baidu
+
+  - name: 🇨🇳 动态域名2
+    server: "cloudnproxy.baidu.com"
+    <<: *Baidu
+
+  - name: 🇨🇳 动态域名3
+    server: "dx.baidu.anxray.top"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京0
+    server: "220.181.33.174"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京1
+    server: "220.181.111.189"
+    <<: *Baidu
+
+  - name: 🇨🇳 江苏南京
     server: "153.3.237.117"
-    <<: *addons
-  - name: 🇨🇳 南京电信①
-    server: "180.101.50.249"
-    <<: *addons
-  - name: 🇨🇳 南京电信②
-    server: "180.101.50.208"
-    <<: *addons
-  - name: 🇨🇳郑州电信 ②
-    server: "180.101.50.208"
-    <<: *addons
-  - name: 🇨🇳郑州中联 ①
-    server: "220.181.7.1"
-    <<: *addons
+    <<: *Baidu
+
+  - name: 🇨🇳 江苏宿迁
+    server: "157.0.146.158"
+    <<: *Baidu
+
+  - name: 🇨🇳 上海1
+    server: "14.215.182.75"
+    <<: *Baidu
