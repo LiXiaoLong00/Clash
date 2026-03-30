@@ -27,7 +27,7 @@ proxies:
     <<: *Baidu
 
   - name: 🇨🇳 北京0
-    server: "220.181.33.174"
+    server: "www.baidu.com"
     <<: *Baidu
 
   - name: 🇨🇳 北京1
