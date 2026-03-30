@@ -43,5 +43,5 @@ proxies:
     <<: *Baidu
 
   - name: 🇨🇳 上海1
-    server: "240e:925:2:401:8000:0:b00:159:80"
+    server: "240e:e9:6002:1ac:0:ff:b07e:36c5"
     <<: *Baidu
