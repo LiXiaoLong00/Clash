@@ -1,0 +1,74 @@
+# 百度代理独立配置文件 - 无健康检测版本
+# 保存为 baidu-proxy.yaml 后，可直接导入或在主配置中引用
+
+# 百度代理通用锚点
+Baidu: &Baidu
+  type: http
+  port: 443
+  skip-cert-verify: true
+  headers:
+    With-At: gw.alicdn.com
+    Host: "153.3.236.22:443"
+    X-T5-Auth: "683556433"
+
+# 代理节点列表
+proxies:
+  - name: 🇨🇳 动态域名2
+    server: "cloudnproxy.baidu.com"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京0
+    server: "180.101.50.249"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京1
+    server: "183.240.98.84"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京2
+    server: "220.181.7.1"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京3
+    server: "220.181.33.174"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京4
+    server: "220.181.111.189"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京5
+    server: "14.215.182.75"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京6
+    server: "36.155.169.188"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京7
+    server: "110.242.70.68"
+    <<: *Baidu
+
+  - name: 🇨🇳 北京8
+    server: "110.242.70.69"
+    <<: *Baidu
+
+  - name: 🇨🇳 江苏南京
+    server: "153.3.237.117"
+    <<: *Baidu
+
+  - name: 🇨🇳 江苏宿迁
+    server: "157.0.146.158"
+    <<: *Baidu
+
+  - name: 🇨🇳 上海1
+    server: "163.177.17.6"
+    <<: *Baidu
+
+  - name: 🇨🇳 上海2
+    server: "163.177.17.189"
+    <<: *Baidu
+
+  - name: 🇨🇳 上海3
+    server: "180.101.50.208"
+    <<: *Baidu
