@@ -13,9 +13,6 @@ Baidu: &Baidu
 
 # 代理节点列表
 proxies:
-  - name: 🇨🇳 动态域名2
-    server: "cloudnproxy.baidu.com"
-    <<: *Baidu
 
   - name: 🇨🇳 北京0
     server: "180.101.50.249"
