@@ -25,23 +25,3 @@ proxies:
   - name: 🇨🇳 动态域名3
     server: "dx.baidu.anxray.top"
     <<: *Baidu
-
-  - name: 🇨🇳 北京0
-    server: "www.baidu.com"
-    <<: *Baidu
-
-  - name: 🇨🇳 北京1
-    server: "220.181.111.189"
-    <<: *Baidu
-
-  - name: 🇨🇳 江苏南京
-    server: "153.3.237.117"
-    <<: *Baidu
-
-  - name: 🇨🇳 江苏宿迁
-    server: "157.0.146.158"
-    <<: *Baidu
-
-  - name: 🇨🇳 上海1
-    server: "240e:e9:6002:1ac:0:ff:b07e:36c5"
-    <<: *Baidu
