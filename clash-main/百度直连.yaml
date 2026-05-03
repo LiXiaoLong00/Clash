@@ -14,17 +14,17 @@ Baidu: &Baidu
 # 代理节点列表
 proxies:
   # 保留你原有3个域名不变
-  - name: 🇨🇳 公共域名1
-    server: "cloudnproxy.n.shifen.com"
-    <<: *Baidu
+#  - name: 🇨🇳 公共域名1
+#    server: "cloudnproxy.n.shifen.com"
+#    <<: *Baidu
 
-  - name: 🇨🇳 动态域名2
-    server: "cloudnproxy.baidu.com"
-    <<: *Baidu
+#  - name: 🇨🇳 动态域名2
+#    server: "cloudnproxy.baidu.com"
+#    <<: *Baidu
 
-  - name: 🇨🇳 动态域名3
-    server: "dx.baidu.anxray.top"
-    <<: *Baidu
+#  - name: 🇨🇳 动态域名3
+#    server: "dx.baidu.anxray.top"
+#    <<: *Baidu
 
   # 下面新增：纯电信 低延迟0丢包 精选前10（全部电信线路）
   - name: 🇨🇳 电信优选01-广州
