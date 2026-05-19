@@ -1,68 +1,43 @@
-# 百度代理独立配置文件 - 无健康检测版本
-# 保存为 baidu-proxy.yaml 后，可直接导入或在主配置中引用
-
-# 百度代理通用锚点
-Baidu: &Baidu
+addons: &addons
   type: http
   port: 443
-  skip-cert-verify: true
   headers:
-    With-At: gw.alicdn.com
-    Host: "153.3.236.22:443"
-    X-T5-Auth: "683556433"
-
-# 代理节点列表
+    # 钉钉直连写法
+     X-T5-Auth: 683556433
+     Host: 153.3.236.22:443
+     Connection: "Keep-Alive"
+# 节点
 proxies:
-  # 保留你原有3个域名不变
-#  - name: 🇨🇳 公共域名1
-#    server: "cloudnproxy.n.shifen.com"
-#    <<: *Baidu
-
-#  - name: 🇨🇳 动态域名2
-#    server: "cloudnproxy.baidu.com"
-#    <<: *Baidu
-
-#  - name: 🇨🇳 动态域名3
-#    server: "dx.baidu.anxray.top"
-#    <<: *Baidu
-
-  # 下面新增：纯电信 低延迟0丢包 精选前10（全部电信线路）
-  - name: 🇨🇳 电信优选01-广州
-    server: 14.215.182.75
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选02-北京
-    server: 220.181.33.174
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选03-南通
-    server: 180.101.50.208
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选04-郑州
-    server: 180.101.50.249
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选05-深圳
-    server: 14.215.182.75
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选06-苏州
-    server: 180.101.50.249
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选07-石家庄
-    server: 220.181.7.1
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选08-合肥
-    server: 180.101.50.249
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选09-徐州
-    server: 180.101.50.208
-    <<: *Baidu
-
-  - name: 🇨🇳 电信优选10-太原
-    server: 220.181.33.174
-    <<: *Baidu
+  - name: 🇨🇳 动态域名①
+    server: "cloudnproxy.baidu.com"
+    <<: *addons
+  - name: 🇨🇳 动态域名②
+    server: "dx.baidu.anxray.top"
+    <<: *addons
+  - name: 🇨🇳 动态域名③
+    server: "cloudnproxy.n.shifen.com"
+    <<: *addons
+  - name: 🇨🇳 北京电信
+    server: "220.181.7.1"
+    <<: *addons
+  - name: 🇨🇳 广州电信
+    server: "14.215.182.75"
+    <<: *addons
+  - name: 🇨🇳 广州移动
+    server: "183.240.98.84"
+    <<: *addons
+  - name: 🇨🇳 南京联通
+    server: "153.3.237.117"
+    <<: *addons
+  - name: 🇨🇳 南京电信①
+    server: "180.101.50.249"
+    <<: *addons
+  - name: 🇨🇳 南京电信②
+    server: "180.101.50.208"
+    <<: *addons
+  - name: 🇨🇳郑州电信 ②
+    server: "180.101.50.208"
+    <<: *addons
+  - name: 🇨🇳郑州中联 ①
+    server: "220.181.7.1"
+    <<: *addons
