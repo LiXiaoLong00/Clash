@@ -3,7 +3,8 @@ addons: &addons
   port: 443
   headers:
     # 钉钉直连写法
-     With-At: gw.alicdn.com
+#     With-At: gw.alicdn.com
+     Host: "gw.alicdn.com"
      X-T5-Auth: 683556433
      Host: 153.3.236.22:443
      Connection: "Keep-Alive"
