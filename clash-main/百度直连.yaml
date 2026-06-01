@@ -7,6 +7,7 @@ addons: &addons
      X-T5-Auth: 683556433
      Host: 153.3.236.22:443
      Connection: "Keep-Alive"
+     User-Agent: "okhttp/3.11.0 SP-engine/2.71.0 Dalvik/2.1.0 (Linux; U; Android 9; HMA-AL00 Build/PQ3B.190801.002) baiduboxapp/13.33.0.11 (Baidu; P1 9)"
 # 节点
 proxies:
   - name: 🇨🇳 动态域名①
