@@ -1,6 +1,6 @@
 addons: &addons
   type: http
-  port: 443
+  port: 80
   headers:
     # 钉钉直连写法
      With-At: gw.alicdn.com
