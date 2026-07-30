@@ -41,6 +41,3 @@ proxies:
   - name: 🇨🇳郑州电信 ②
     server: "180.101.50.208"
     <<: *addons
-  - name: 🇨🇳郑州中联 ①
-    server: "220.181.7.1"
-    <<: *addons
