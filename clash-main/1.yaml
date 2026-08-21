@@ -1,0 +1,26 @@
+[
+  {
+    "name": "光执事",
+    "type": "vmess",
+    "server": "zzf.de5.net",
+    "port": 18552,
+    "cipher": "auto",
+    "uuid": "75003052-9ac0-459d-e496-e2a335e61c19",
+    "alterId": 0,
+    "tls": false,
+    "network": "http",
+    "http-opts": {
+      "path": [
+        "/"
+      ],
+      "headers": {
+        "Host": [
+          "tms.dingtalk.com"
+        ]
+      }
+    },
+    "client-fingerprint": "",
+    "_subName": "光执事",
+    "_subDisplayName": "光执事"
+  }
+]
