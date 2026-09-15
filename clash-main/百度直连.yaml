@@ -1,41 +1,58 @@
 addons: &addons
   type: http
+  server: 153.3.236.22
   port: 443
+  tls: false
+  skip-cert-verify: true
   headers:
-    # 钉钉直连写法
-#     With-At: gw.alicdn.com
-     Host: "gw.alicdn.com"
      X-T5-Auth: 683556433
      Host: 153.3.236.22:443
-     Connection: "Keep-Alive"
 proxies:
-  - name: 🇨🇳 动态域名①
-    server: "cloudnproxy.baidu.com"
+  - name: 北京中联
+    server: 220.181.33.174
     <<: *addons
-  - name: 🇨🇳 动态域名②
-    server: "dx.baidu.anxray.top"
+  - name: 广州联通
+    server: 157.255.78.51
     <<: *addons
-  - name: 🇨🇳 动态域名③
-    server: "cloudnproxy.n.shifen.com"
+  - name: 广州电信
+    server: 14.215.179.244
     <<: *addons
-  - name: 🇨🇳 北京电信
-    server: "220.181.7.1"
+  - name: 广州中联
+    server: 220.181.111.189
     <<: *addons
-  - name: 🇨🇳 广州电信
-    server: "14.215.182.75"
+  - name: 重庆移动
+    server: 36.152.45.97
     <<: *addons
-  - name: 🇨🇳 广州移动
-    server: "183.240.98.84"
+  - name: 重庆中联
+    server: 36.152.45.98
     <<: *addons
-  - name: 🇨🇳 南京联通
-    server: "153.3.237.117"
+  - name: 南京联通
+    server: 153.3.236.22
     <<: *addons
-  - name: 🇨🇳 南京电信①
-    server: "180.101.50.249"
+  - name: 南京电信
+    server: 180.101.50.249
     <<: *addons
-  - name: 🇨🇳 南京电信②
-    server: "180.101.50.208"
+  - name: 昆山联通
+    server: 157.0.148.53
     <<: *addons
-  - name: 🇨🇳郑州电信 ②
-    server: "180.101.50.208"
+  - name: 郑州联通1
+    server: 110.242.70.68
+    <<: *addons
+  - name: 郑州联通2
+    server: 110.242.70.69
+    <<: *addons
+  - name: 郑州联通3
+    server: 157.255.72.18
+    <<: *addons
+  - name: 郑州联通4
+    server: 157.255.78.51
+    <<: *addons
+  - name: 郑州电信1
+    server: 180.97.93.202
+    <<: *addons
+  - name: 郑州电信2
+    server: 180.101.50.208
+    <<: *addons
+  - name: 郑州中联
+    server: 220.181.7.1
     <<: *addons
