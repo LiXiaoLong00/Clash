@@ -17,3 +17,6 @@ proxies:
   - {name: 🇨🇳 动态域名①, server: cloudnproxy.baidu.com, <<: *addons}
   - {name: 🇨🇳 动态域名②, server: dx.baidu.anxray.top, <<: *addons}
   - {name: 🇨🇳 动态域名③, server: cloudnproxy.n.shifen.com, <<: *addons}
+  - {name: 百度②, server: 111.63.65.247, <<: *addons}
+  - {name: 百度③, server: 124.237.177.164, <<: *addons}
+  - {name: 百度④, server: 110.242.74.102, <<: *addons}
