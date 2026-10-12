@@ -1,4 +1,4 @@
-addons: &addons {type: http, port: 443, path: "@gw.alicdn.com", del_host: true, headers: {With-At: "gw.alicdn.com"}}
+addons: &addons {type: http, port: 443, path: "@tms.dingtalk.com", del_host: true, headers: {With-At: "tms.dingtalk.com"}}
 proxies:
-  - {name: 广州联通①, server: 163.177.17.189, <<: *addons}
+  - {name: 广州联通①, server: 36.155.169.188, <<: *addons}
   - {name: 广州联通②, server: 163.177.17.6, <<: *addons}
