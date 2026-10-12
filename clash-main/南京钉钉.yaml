@@ -1,5 +1,4 @@
 addons: &addons {type: http, port: 443, path: "@tms.dingtalk.com", del_host: true, headers: {With-At: "tms.dingtalk.com"}}
 proxies:
-  - {name: 南京电信①, server: 163.177.17.189, <<: *addons}
-  - {name: 南京电信②, server: 163.177.17.6 <<: *addons}
-  
+  - {name: 南京电信①, server: 163.177.17.6, <<: *addons}
+  - {name: 南京电信②, server: 163.177.17.189, <<: *addons}
