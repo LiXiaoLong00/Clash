@@ -1,0 +1,124 @@
+{
+  "outbounds": [
+    {
+      "tag": "南京电信①",
+      "type": "http",
+      "server": "180.101.50.208",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "南京电信②",
+      "type": "http",
+      "server": "180.101.50.249",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "北京电信①",
+      "type": "http",
+      "server": "220.181.7.1",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "北京电信②",
+      "type": "http",
+      "server": "220.181.33.174",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "北京电信③",
+      "type": "http",
+      "server": "220.181.111.189",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "广州电信",
+      "type": "http",
+      "server": "14.215.179.244",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "保定联通①",
+      "type": "http",
+      "server": "110.242.70.68",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "保定联通②",
+      "type": "http",
+      "server": "110.242.70.69",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "南京联通",
+      "type": "http",
+      "server": "153.3.236.22",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "苏州联通",
+      "type": "http",
+      "server": "157.0.148.53",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "南京移动",
+      "type": "http",
+      "server": "36.152.45.97",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    },
+    {
+      "tag": "广州移动",
+      "type": "http",
+      "server": "157.255.78.51",
+      "server_port": 443,
+      "headers": {
+        "X-T5-Auth": "683556433",
+        "Host": "153.3.236.22:443"
+      }
+    }
+  ]
+}
